@@ -10,12 +10,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { LoginComponent } from './components/login/login.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateAccountComponent,
+    LoginComponent,
    
   ],
   imports: [

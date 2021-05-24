@@ -11,13 +11,21 @@ import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-import { LoginComponent } from './components/login/login.component'
+import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component'
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatListModule} from '@angular/material/list';
+import { NoteComponent } from './components/note/note.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateAccountComponent,
     LoginComponent,
+    DashboardComponent,
+    NoteComponent,
    
   ],
   imports: [
@@ -28,7 +36,10 @@ import { LoginComponent } from './components/login/login.component'
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

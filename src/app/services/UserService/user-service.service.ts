@@ -14,7 +14,7 @@ export class UserServiceService {
   }
 
   loginuser(data: any){
-    console.log("dara in user service ",data);
+    console.log("data in user service ",data);
     return this.httpService.post('user/login',data);
   }
 
